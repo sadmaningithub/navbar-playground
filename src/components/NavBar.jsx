@@ -5,13 +5,13 @@ import { NavLink } from "react-router";
 const NavBar = () => {
 
     const navLinks = [
-        { name: 'home', icon: <House /> },
-        { name: 'about', icon: <BookOpen />},
-        { name: 'contact', icon: <Mail className="hover:h-10 hover:w-10" />}
+        { name: 'home', icon: <House className=" transform hover:scale-125 transition ease-in-out duration-300"/> },
+        { name: 'about', icon: <BookOpen className=" transform hover:scale-125 transition ease-in-out duration-300"/>},
+        { name: 'contact', icon: <Mail className=" transform hover:scale-125 transition ease-in-out duration-300 " />}
     ]
 
     return (
-        <div className="border">
+        <div className="flex flex-col space-y-2 items-center max-w-10 w-full ">
             {
                 navLinks.map(navLink => <NavLink to={navLink.name}> {navLink.icon}</NavLink>)
             }

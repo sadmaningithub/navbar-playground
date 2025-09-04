@@ -4,9 +4,8 @@ import NavBar from "../components/NavBar";
 
 const Root = () => {
     return (
-        <div className="max-w-7xl mx-auto flex flex-row border">
-            
-            <NavBar/>
+        <div className="max-w-7xl mx-auto flex flex-row ">
+            <NavBar />
             <Outlet></Outlet>
         </div>
     );
